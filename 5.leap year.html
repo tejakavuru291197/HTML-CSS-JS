@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var Ny = 0;
+var Cy = prompt("enter a year"); 
+
+function leapYears() {
+    while (Ny < 20) { 
+        if ((Cy % 4 === 0) && (!((Cy % 100===0) && (Cy % 400 !== 0)))) {
+                       document.write(Cy + "<br>");
+            Ny++;
+            Cy++;
+        } else {
+            Cy++;
+        }
+    }       
+}
+
+leapYears();
+</script>
+</head>
+</html>
